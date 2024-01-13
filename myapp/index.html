@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra
+    </title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="../assets/img/banner-img/myntra-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../public/extra.css">
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body onresize="reSize" class="">
+
+    <!-- NavBar -->
+
+    <div class="container1 w-screen h-[12%] max-sm:h-[8%] bg-white shadow-md sticky top-0 z-40">
+        <div class="navBar w-screen h-full  flex pl-10 pr-10 items-center max-lg:justify-between max-sm:pl-2 max-sm:pr-2">
+                <div class="logo w-[60px] ml-5 mr-10 flex gap-3 max-lg:ml-0 max-lg:mr-0">
+                    <span class="hidden max-lg:block hamburger cursor-pointer text-[22px]"><i class="fa-solid fa-bars"></i></span>
+                    <img src="../assets/img/banner-img/myntra-logo.jpg" alt="myntra-logo" class="w-full max-lg:w-[60%] cursor-pointer max-sm:hidden">
+                    <span class="hidden max-sm:block font-Segoe font-[700] text-[20px]">Myntra</span>
+                </div>
+
+                <div class="navigation flex list-none  font-[700] text-[13px] h-full w-[40%] max-xl:w-[50%] max-lg:hidden justify-around items-center mr-5 max-xl:text-[12px]">
+                    <li class="h-full flex items-center cursor-pointer hover:border-b-4 overflow-hidden hover:border-b-pinkTone">MEN</li>
+                    <li class="h-full flex items-center cursor-pointer hover:border-b-4 hover:border-b-pinkTone">WOMEN</li>
+                    <li class="h-full flex items-center cursor-pointer hover:border-b-4 hover:border-b-pinkTone">KIDS</li>
+                    <li class="h-full flex items-center cursor-pointer hover:border-b-4 hover:border-b-pinkTone">HOME & LIVING</li>
+                    <li class="h-full flex items-center cursor-pointer hover:border-b-4 hover:border-b-pinkTone">BEAUTY</li>
+                    <li class="h-full flex items-center justify-center cursor-pointer hover:border-b-4 hover:border-b-pinkTone after:content-['NEW'] after:text-[11px] after:relative after:bottom-[8px] after:pl-[3px] after:text-pinkTone after:font[600]">STUDIO</li>
+                </div>
+
+                <div class="search w-[35%] h-[50%] flex justify-between pl-3 items-center bg-searchBar rounded-md mr-10 max-lg:w-[45%] max-md:hidden">
+                    <span class="text-[12px] text-gray-400 max-md:hidden"><i class="fa-solid fa-magnifying-glass max-xl:text-[10px] max-md:text-[15px]"></i></span>
+                    <input type="text" name="search" id="search" placeholder="Search for products, brands and more" title="Search" class="w-[95%] h-full bg-transparent outline-none border-none text-gray-400 max-xl:text-[14px] max-md:hidden">
+                </div>
+
+                <div class="icon-section flex gap-[22px] max-sm:gap-3">
+                  <div class="search flex justify-center items-center relative top-[1px]"><span class="text-[12px] hidden max-md:block" title="search"><i class="fa-solid fa-magnifying-glass max-xl:text-[10px] max-md:text-[15px] cursor-pointer max-sm:text-[15px]"></i></span></div>
+                    <div class="profile text-[13px] flex flex-col items-center max-xl:text-[11px] max-md:text-[17px] cursor-pointer max-sm:text-[15px]" title="Profile">
+                        <p ><i class="fa-regular fa-user"></i></p>
+                        <p class="font-[600] max-md:hidden">Profile</p>
+                    </div>
+                    <div class="whislist text-[13px] flex flex-col items-center max-xl:text-[11px] max-md:text-[17px] cursor-pointer max-sm:text-[15px]" title="wishlist">
+                        <p><i class="fa-regular fa-heart"></i></p>
+                        <p class="font-[600] max-md:hidden">Wishlist</p>
+                    </div>
+                    <div class="bag text-[13px] flex flex-col items-center max-xl:text-[11px] max-md:text-[17px] cursor-pointer max-sm:text-[15px]" title="cart">
+                        <p ><i class="fa-solid fa-bag-shopping"></i></p>
+                        <p class="font-[600] max-md:hidden">Bag</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- NavBar-Ends -->
+
+    <!-- Mobile-Navigation -->
+
+    <div class="mobile-nav max-lg:w-[50%] h-full max-sm:w-[80%] bg-white absolute top-0 left-[-100%] lg:hidden transition-all shadow-2xl overflow-scroll z-50">
+      <div class="mob-container">
+        <div class="banner-img w-full h-[15%] bg-mobileNav pb-[15px] relative">
+          <span class="absolute right-4 top-5 text-[20px] close"><i class="fa-solid fa-xmark"></i></span>
+          <img src="../assets/img/banner-img/mobile-nav-1st.jpg" alt="" class="w-full">
+          <p class="font-[700] max-sm:text-[9px] max-lg:text-[14px] absolute right-[15px] bottom-[15px] text-pinkTone">SIGN UP. LOGIN</p>
+        </div>
+
+
+        <div class="2nd-col w-full h-[50%] border-b-[1px] border-gray-200">
+          <div class="2nd-container p-5 flex flex-col gap-5">
+            <div class="category flex justify-between " id="men">
+              <p class="text-[14px] font-[600]">Men</p>
+              <span><i class="fa-solid fa-angle-right" id="icon1"></i></span>
+            </div>
+            <div class="category flex justify-between"  id="women">
+              <p class="text-[14px] font-[600]">Women</p>
+              <span><i class="fa-solid fa-angle-right" id="icon2"></i></span>
+            </div>
+            <div class="category flex justify-between"  id="kids">
+              <p class="text-[14px] font-[600]">Kids</p>
+              <span><i class="fa-solid fa-angle-right" id="icon3"></i></span>
+            </div>
+            <div class="category flex justify-between"  id="home">
+              <p class="text-[14px] font-[600]">Home & Living</p>
+              <span><i class="fa-solid fa-angle-right" id="icon4"></i></span>
+            </div>
+            <div class="category flex justify-between"  id="beauty">
+              <p class="text-[14px] font-[600]">Beauty</p>
+              <span><i class="fa-solid fa-angle-right" id="icon5"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="2nd-col w-full h-[50%] ">
+          <div class="2nd-container p-5 flex flex-col gap-5">
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">Myntra Studio</p>
+            </div>
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">Myntra Mall</p>
+            </div>
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">Myntra Insider</p>
+            </div>
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">Gifts Cards</p>
+            </div>
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">Contact Us</p>
+            </div>
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">FAQs</p>
+            </div>
+            <div class="category flex justify-between">
+              <p class="text-[14px] font-[400]">Legal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-img w-full h-[15%] bg-mobileNav pb-[15px]">
+          <img src="../assets/img/banner-img/mobile-nav-2nd.jpg" alt="" class="w-full">
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile-Navigation-End -->
+
+    <!-- Big-Screen-banner -->
+
+    <div class="banner swiper mySwiper w-full h-[60%] max-sm:hidden">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-1.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-2.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-3.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-4.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-5.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-6.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-7.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/banner-img/banner-8.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Big-Screen-banner-End -->
+
+<!-- Mobile-Category-Section -->
+<div class="upper1 max-sm:flex sm:hidden max-sm:w-[100vw] h-[20%] overflow-x-auto">
+  <div class="item flex-shrink-0 w-[25%] h-full ">
+    <img src="../assets/img/mob-slider/1.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/2.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/3.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/4.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/5.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/6.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/7.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/8.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/9.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/10.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/11.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/12.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/13.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/14.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+</div>
+
+<div class="upper2 max-sm:flex sm:hidden max-sm:w-[100vw] h-[20%] overflow-x-auto">
+  <div class="item flex-shrink-0 w-[25%] h-full ">
+    <img src="../assets/img/mob-slider/15.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/16.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/17.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/18.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/19.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/20.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/21.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/22.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/23.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/24.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/25.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/26.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/27.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/28.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/29.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/30.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+  <div class="item flex-shrink-0 w-[25%] h-full">
+    <img src="../assets/img/mob-slider/31.jpg" alt="" class="w-[100%] h-[100%] object-fill" loading="lazy">
+  </div>
+</div>
+
+<div class="download hidden max-sm:block">
+<img src="../assets/img/mob-slider/download.jpg" alt="" loading="lazy">
+</div>
+<div class="download hidden max-sm:block">
+<img src="../assets/img/mob-slider/sign-up.jpg" alt="" loading="lazy">
+</div>
+
+<!-- Mobile-Screen-Banner-End -->
+
+
+<!-- First-Carousel -->
+
+<div class="first-carousel mt-16 max-sm:mt-8">
+  <div class="wraps pl-3 mb-5">
+    <h3 class="font-[700] text-[22px] max-md:text-[18px] max-sm:text-[15px]">MEDAL WORTHY BRANDS TO BAG</h3>
+  </div>
+  <div class="carousel1 swiper mySwiper1 w-full h-[50%]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/1.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/2.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/3.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/4.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/5.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/6.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/7.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/8.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/9.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/10.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/11.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/first-craousel/12.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- First-Carousel-end -->
+
+<!-- Second-carousel -->
+
+<div class="second-carousel mt-16 max-sm:mt-8">
+  <div class="wraps pl-3 mb-5">
+    <h3 class="font-[700] text-[22px] max-md:text-[18px] max-sm:text-[15px]">MEDAL WORTHY BRANDS TO BAG</h3>
+  </div>
+  <div class="carousel2 swiper mySwiper2 w-full h-[50%]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/1.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/2.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/3.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/4.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/5.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/6.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/7.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/8.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/9.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/10.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/11.jpg" alt="" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/second-craousel/12.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- second-Carousel-end -->
+
+<!-- Category-Section -->
+
+<div class="cateogry-container w-full mt-5">
+  <div class="contentt">
+    <div class="title-img">
+      <img src="../assets/img/Category-img/title.webp" alt="">
+    </div>
+    <div class="category-img w-full flex flex-wrap justify-center">
+      <img src="../assets/img/Category-img/1.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/2.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/3.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/4.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/5.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/6.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/7.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/8.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/9.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/10.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/11.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/12.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/13.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/14.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/15.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/16.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/17.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/18.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/19.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/20.jpg" alt="" loading="lazy">
+      <img src="../assets/img/Category-img/21.jpg" alt="" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- Category-Section-End -->
+
+<!-- Footer-Section-Start -->
+
+<div class="footer w-full bg-gray-50 mt-5 max-md:hidden ">
+  <div class="footer-content w-full pt-10 xl:pl-60 max-xl:pl-20 pr-20 flex gap-16 pb-5">
+    <div class="fisrt">
+      <div class="online">
+        <h1 class="text-[11px] font-[700] text-gray-800 mb-4 ">ONLINE SHOPPING</h1>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Men</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Women</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Kids</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Home & Living</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Beauty</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Gift Cards</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Myntra Insider</p>
+      </div>
+      <div class="link mt-4">
+        <h1 class="text-[11px] font-[700] text-gray-800 mb-4">USEFUL LINKS</h1>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Blog</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Careers</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Site Map</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Corporate Information</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Whitehat</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Cleartrip</p>
+        
+      </div>
+    </div>
+    <div class="sec">
+      <h1 class="text-[11px] font-[700] text-gray-800 mb-4 ">CUSTOMER POLICIES</h1>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Contact Us</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">FAQ</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">T&C</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Terms Of Use</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Track Orders</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Shipping</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Cancellation</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Returns</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Privacy Policy</p>
+        <p class="text-[14px] max-lg:text-[12px]  text-gray-500">Grievance Officer</p>
+    </div>
+    <div class="third w-[40%]">
+      <h1 class="text-[11px] font-[700] text-gray-800 mb-4">EXPERIENCE MYNTRA APP ON MOBILE</h1>
+      <div class="image flex mb-4 gap-3">
+        <img src="../assets/img/banner-img/play-store.png" alt="" class="w-[45%] max-lg:w-[45%]">
+        <img src="../assets/img/banner-img/app-store.png" alt="" class="w-[45%] max-lg:w-[45%]">
+      </div>
+      <h1 class="text-[11px] font-[700] text-gray-800 mb-2">KEEP IN TOUCH</h1>
+      <div class="icons text-[22px]">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <div class="fourth">
+      <div class="upper flex items-center mb-5">
+        <div class="image">
+          <img src="../assets/img/Category-img/footer-original.png" alt="" class="w-[90%]">
+        </div>
+        <p class="text-[14px] max-lg:text-[12px]"><span class="font-[700]">100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+      </div>
+
+      <div class="down flex items-center">
+        <div class="foot-time w-[80px]">
+          <img src="../assets/img/Category-img/footer-time.png" alt="" class="w-[90%]">
+        </div>
+        <p class="text-[14px] max-lg:text-[12px]"><span class="font-[700]">Return within 14days</span> of receiving your order</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer-section-End -->
+
+<!-- Mobile-Footer-Section -->
+
+<div class="foot-action w-full h-[40px] hidden max-md:flex justify-between p-5 bg-gray-100 items-center" id="footClick">
+  <p class="text-[13px] max-sm:text-[13px]">More about Online Shopping at Myntra</p>
+  <span class="text-[14px]"><i class="fa-solid fa-angle-down" id="icon6"></i></span>
+</div>
+
+<div class="foot-container w-full lg:hidden  border-b-2  border-gray-400" id="mobFoot">
+  <div class="foot-content w-full pt-10 pl-10 pr-10 pb-5">
+    <div class="shop mb-4">
+      <h2 class="font-[700] text-[13px] text-gray-800">SHOP FOR</h2>
+      <p class="text-[13px] [word-spacing:5px]">Explore | Men | Women | Kids | Home & Living</p>
+    </div>
+    <div class="keep-in mb-4">
+      <h2 class="font-[700] text-[13px] text-gray-800 mb-2">KEEP IN TOUCH</h2>
+      <div class="icons text-[22px] flex gap-5 max-sm:text-[16px]">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <div class="policy mb-4">
+      <h2 class="font-[700] text-[13px] text-gray-800">CUSTOMER POLICIES</h2>
+      <p class="text-[13px] [word-spacing:5px]">Contact Us | FAQ | T&C | Terms Of Use | Track Orders | Shipping | Cancellation | Returns | Privacy Policy | Grievance Officer</p>
+    </div>
+    <div class="links">
+      <h2 class="font-[700] text-[13px] text-gray-800">USEFUL LINKS</h2>
+      <p class="text-[13px] [word-spacing:5px]">Bog | Careers | Site Maps | Corporate Information | Whitehat | Cleartrip</p>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../public/script.js"></script>
+  </body>
+</html>

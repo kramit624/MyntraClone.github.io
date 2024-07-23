@@ -62,7 +62,7 @@ var swiper1 = new Swiper(".mySwiper1", {
         clickable: true,
       },
       autoplay: {
-        delay: 4000,
+        delay: 3000,
         disableOnInteraction: false,
     },
       breakpoints: {
